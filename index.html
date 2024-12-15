@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleanit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   
+</head>
+<body>
+    <!----------------------------------SCROOL TEST------------------------------------------------------------------>
+    <div id="progress" onclick="scrollToTop()" style="cursor: pointer;">
+        <span id="progress-value">&#x1f815;</span>
+    </div>
+    
+    <script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    </script>
+    
+   
+    
+    <script>
+    // Show the button when scrolling down
+    window.onscroll = function() {
+        const progress = document.getElementById("progress");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            progress.style.display = "block";
+        } else {
+            progress.style.display = "none";
+        }
+    };
+    </script>
+    
+    <!--------------------------------------------------------------------------------------------------------------->
+   <div id="progress">
+    <span id="progress-value">&#x1f815;</span>
+   </div>
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#"><img src="Logo.PNG" alt="Logo"></a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="home" style="color: #119238; text-decoration: none;"onmouseover="this.style.color='white';" 
+                onmouseout="this.style.color='green';"><i class="fa fa-home"></i> Home</a>
+
+                <!--Alert Message-->
+                <a href="#" onClick="alert('Please Login First')">Request Clean</a>
+                <a href="#Services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#">Featurs</a>
+                
+                
+
+
+
+            <!-- Profile/Login Section -->
+            <div class="profile-section">
+                <a href="Login/index.html" class="login-btn">Login <i class="fas fa-sign-in-alt"></i></a>
+                <a href="#" class="signup-btn">Signup</a>
+            </div>
+        </div>
+    </header>
+ <!-------------------------------------------------------Boady Section---------------------------------------------------------->
+ <!-- Welcome Section -->
+ <section class="welcome-section">
+    <div class="welcome-text">
+        <h2>Welcome To Cleanit</h2>
+        <p>We are dedicated to making the world a cleaner and greener place through sustainable waste management solutions.</p>
+        <button class="btn" onclick="myFunction()">Request</button>
+        <button class="btn" onclick="myFunction()">Track </button>
+        <!--Alert Message-->
+        <script>
+            function myFunction() {
+              alert("Please Login first");
+            }
+            </script>
+
+    </div>
+    <img src="images/15043.png" alt="Cleanit">
+
+</section>
+
+
+    <!--------------------------------------------------Service Section Start----------------------------------------------------->
+  
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="row" id="Services">
+            <div class="box">
+                <img src="images/service1.jpg" alt="Residential Waste Collection">
+                <h3>Residential Waste Collection</h3>
+                <p>We offer eco-friendly, reliable collection of household waste, recyclables, and yard waste.</p>
+                <button class="btn" onClick="alert('Please Login First')">See more</button>
+            </div>
+    
+            <div class="box">
+                <img src="images/service2.png" alt="Commercial Waste Disposal">
+                <h3>Commercial Waste Disposal</h3>
+                <p>Customized waste disposal for businesses, ensuring safe and compliant handling of all types of waste.</p>
+                <button class="btn" onClick="alert('Please Login First')">See more</button>
+               
+            </div>
+    
+            <div class="box">
+                <img src="images/service3.jpg" alt="Recycling Programs">
+                <h3>Waste Recycling Programs</h3>
+                <p>Sustainability is at the heart of our waste management philosophy.Programs to reduce landfill waste and recycle materials, including e-waste, with eco-friendly practices.</p>
+                <button class="btn" onClick="alert('Please Login First')">See more</button>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------Service Section End----------------------------------------------------->
+    <div id="faq"></div>
+    <section class="faq-section">
+        
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq">
+            <h3 class="faq-question">What is waste management? <span class="faq-arrow">&#x276F;</span></h3>
+            <p class="faq-answer">Waste management refers to the activities and actions required to manage waste from its inception to its final disposal. This includes collection, transportation, treatment, and disposal of waste, along with monitoring and regulation.</p>
+        </div>
+    
+        <div class="faq">
+            <h3 class="faq-question">Why is waste management important? <span class="faq-arrow">&#x276F;</span></h3>
+            <p class="faq-answer">Waste management is crucial for maintaining a clean environment, reducing pollution, conserving resources, and ensuring the health and well-being of individuals and communities.</p>
+        </div>
+    
+        <div class="faq">
+            <h3 class="faq-question">What are the types of waste? <span class="faq-arrow">&#x276F;</span></h3>
+            <p class="faq-answer">Waste can be categorized into different types, including solid waste (household garbage), liquid waste (sewage, wastewater), hazardous waste (chemicals, medical waste), and recyclable waste (paper, plastic, glass).</p>
+        </div>
+    
+        <div class="faq">
+            <h3 class="faq-question">How can I reduce household waste? <span class="faq-arrow">&#x276F;</span></h3>
+            <p class="faq-answer">We can reduce household waste by recycling, composting organic waste, reusing items, buying products with minimal packaging, and reducing consumption of disposable products.</p>
+        </div>
+    
+        <div class="faq">
+            <h3 class="faq-question">What is recycling? <span class="faq-arrow">&#x276F;</span></h3>
+            <p class="faq-answer">Recycling is the process of converting waste materials into new materials and objects. It helps reduce the consumption of fresh raw materials, decrease energy usage, and reduce air and water pollution.</p>
+        </div>
+    
+    </section>
+    
+    <!----------------------------------------------------------Footer Section-------------------------------------------------- -->
+        <div id="about"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+            <div class="row">
+                <div class="footer-col">
+
+  <!--Footer logo-->
+
+                    <div class="logo">
+                        <h4>About US </h4>
+                        <a href="#"><img src="Logo.PNG" alt="Logo"></a>
+                    </div>
+                    <br>
+                    <p>This is a Code Red 4.0 Hackthon project which is devlop by team incoders in vgu campus jaipur.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">&#187; Home</a></li>
+                        <li><a href="#">&#187; Featurs</a></li>
+                        <li><a href="#">&#187; Request</a></li>
+                        <li><a href="#" onClick="alert('Please Login First')">&#187; Track</a></li>
+                        <li><a href="#faq">&#187; FAQ</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="social-links">
+                        <div class="contact-address">
+                            <pre class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>  <b>Address:</b> Sector 36, NRI Colony Rd, VIT Campus 
+                      Jagatpura, Jaipur, Rajasthan 303012</pre>
+                            <pre class="mb-2"><i class="fa fa-phone-alt me-3"></i>  <b>Phone:</b> +91 1800 313 1415</pre>
+                            <pre class="mb-2"><i class="fa fa-envelope me-3"></i>  <b>Email:</b>  info@cleanit.com</pre>
+                        </div>
+                        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/?lang=en" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rahulkumarraivgu/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!--Copyright Elemrnt -->
+
+                <div class="copyright">
+                    <p><center>Vgu Code Red 4.0 © Clean it Team incoders all rights reserved </center></p>
+              
+ <script src="index.js"></script>
+</body>
+</html>
